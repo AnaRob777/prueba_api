@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba APIS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <section class="box">
+        <h1>Conversor de monedas Nacional</h1>
+        <div class="conversor">
+            <h2>Pesos CLP</h2>
+            <input type="number" id="input" placeholder="0">
+            <h3>Moneda a convertir:</h3>
+            <select name="tipos de monedas" id="select">
+                <option value="" disabled selected>Tipo de moneda</option>
+                <option value="dolar">Dólar</option>
+                <option value="euro">Euro</option>
+            </select>
+            <button id="buscar">Buscar</button>
+            <div class="resultado">
+                <h2>Resultado:</h2>
+                <h2 id="resultado"></h2>
+            </div>
+        </div>
+        <div class="chart">
+            <canvas id="grafico"></canvas>
+        </div>
+    </section>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
